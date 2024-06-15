@@ -5,8 +5,8 @@ RUN apt update
 
 RUN apt install python3 -y
 RUN apt install -y python3-pip
-RUN pip3 install --upgrade pip
-RUN  pip install boto3  
+#RUN pip3 install --upgrade pip
+RUN  pip install boto3 --break-system-packages
 
 WORKDIR /usr/app/src
 
